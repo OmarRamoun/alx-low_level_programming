@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * Main -Entry point
+ *
+ * Description: The printf function
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));

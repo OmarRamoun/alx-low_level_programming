@@ -5,7 +5,7 @@
 *
 *The power of printf function
 *
-*Return:0 and exit
+*Return:0 (SUCCESS)
 */
 
 int main(void)

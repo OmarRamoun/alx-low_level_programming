@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
-*main - Entry point
-*
-*The power of printf function
-*
-*Return:0 (SUCCESS)
-*/
-
+ * main - Entry point
+ *
+ * Description: The power of the printf function
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");

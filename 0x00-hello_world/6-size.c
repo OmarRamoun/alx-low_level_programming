@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
-*main - Entry point
-*
-*Discription: print size of data type
-*
-*Return:always 0 (SUCCESS)
-*/
-
+ * main - Entry point
+ *
+ * Des: Print size of data types
+ *
+ * Return: Always 0 (SUCCESS)
+ */
 int main(void)
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));

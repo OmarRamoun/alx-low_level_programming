@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - displays "with proper grammar, but the outcome is a piece of art" with new line
- * Return: 0 and exit the program
- */
+*main - Entry point
+*
+*The power of printf function
+*
+*Return:0 and exit
+*/
 
 int main(void)
 {

@@ -1,52 +1,25 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
 int main(void)
-
 {
+    int digit1, digit2;
 
-	int c, l;
+    for (digit1 = 0; digit1 <= 8; digit1++)
+    {
+        for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
+        {
+            putchar((digit1 % 10) + '0');
+            putchar((digit2 % 10) + '0');
 
+            if (digit1 != 8 || digit2 != 9)
+            {
+                putchar(',');
+                putchar(' ');
+            }
+        }
+    }
 
+    putchar('\n');
 
-	for (c = 48; c <= 56; c++)
-
-	{
-
-		for (l = 49; l <= 57; l++)
-
-		{
-
-			if (l > c)
-
-			{
-
-				putchar(c);
-
-				putchar(l);
-
-				if (c != 56 || l != 57)
-
-				{
-
-					putchar(',');
-
-					putchar(' ');
-
-				}
-
-			}
-
-		}
-
-	}
-
-	putchar('\n');
-
-	return (0);
+    return 0;
 }

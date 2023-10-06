@@ -1,48 +1,31 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
 int main(void)
-
 {
-	int c, b, a;
+    int d1, d2, d3;
 
-	for (c = 48; c < 58; c++)
-	{
-		for (b = 49; b < 58; b++)
-		{
-			for (a = 50; a < 58; a++)
-			{
-				if (a > b && b > c)
+    for (d1 = 0; d1 <= 7; d1++)
+    {
+        for (d2 = d1 + 1; d2 <= 8; d2++)
+        {
+            for (d3 = d2 + 1; d3 <= 9; d3++)
+            {
+                putchar((d1 % 10) + '0');
+                putchar((d2 % 10) + '0');
+                putchar((d3 % 10) + '0');
 
-				{
-					putchar(c);
+                if (d1 == 7 && d2 == 8 && d3 == 9)
+                {
+                    putchar('\n');
+                }
+                else
+                {
+                    putchar(',');
+                    putchar(' ');
+                }
+            }
+        }
+    }
 
-					putchar(b);
-
-					putchar(a);
-
-					if (c != 55 || b != 56)
-
-					{
-						putchar(',');
-
-						putchar(' ');
-					}
-
-				}
-
-			}
-
-		}
-
-	}
-
-	putchar('\n');
-
-	return (0);
+    return 0;
 }
